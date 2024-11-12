@@ -6,12 +6,12 @@ namespace RE
 	{
 		namespace Character
 		{
-			constexpr auto IsTalking = REL::ID(37266);
+			constexpr auto IsTalking = REL::ID(36277);
 		}
 
 		namespace TESObjectREFR
 		{
-			constexpr auto Say = REL::ID(19518);
+			constexpr auto Say = REL::ID(19116);
 		}
 	}
 }
