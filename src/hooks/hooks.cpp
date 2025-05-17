@@ -35,9 +35,9 @@ namespace Hooks {
 	{
 		auto& trampoline = SKSE::GetTrampoline();
 
-		REL::Relocation<std::uintptr_t> target{ REL::ID(25541), 0xE2 };
+		REL::Relocation<std::uintptr_t> target{ REL::ID(25014), 0xE2 };
 		if (!REL::make_pattern<"E8">().match(target.address())) {
-			logger::critical("  >Failed to match pattern for 25541 + 0xE2."sv);
+			logger::critical("  >Failed to match pattern for 25014 + 0xE2."sv);
 			return false;
 		}
 		_func = trampoline.write_call<5>(target.address(), &Thunk);
